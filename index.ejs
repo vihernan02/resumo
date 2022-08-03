@@ -11,9 +11,13 @@
 <body>
     <div class="container">
         <h1 class="text-center">Página de revisão</h1>
-        <h3 class="text-center">Nome: <%=nome%></h3>
-        <h3 class="text-center">Turma: <%=turma%></h3>
-        <h3 class="text-center">Disciplina: <%=disciplina%></h3>
+        <hr>
+        <% for (var n=0; n<resultado.length; n++){%>
+        <h3 class="text-center">Nome: <%=resultado[n].nome%></h3>
+        <h3 class="text-center">Turma: <%=resultado[n].turma%></h3>
+        <h3 class="text-center">Disciplina: <%=resultado[n].disciplina%></h3>
+        <hr>
+        <% } %>
     </div>
 </body>
-</html>
+</html> 
